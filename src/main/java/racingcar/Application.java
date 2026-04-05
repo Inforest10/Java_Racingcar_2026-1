@@ -108,6 +108,9 @@ public class Application {
     InputCarName Names = new InputCarName();
     InputTotalMoves Moves = new InputTotalMoves();
 
-    List<Car> Cars = new ArrayList<>();
+    List<Car> Cars = Names.getCars();
+    int MoveCount = Moves.getTotalMoves();
     }
+
+
 }
