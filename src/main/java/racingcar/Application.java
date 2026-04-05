@@ -1,8 +1,5 @@
 package racingcar;
 
-import camp.nextstep.edu.missionutils.Console;
-import camp.nextstep.edu.missionutils.Randoms;
-import java.util.ArrayList;
 import java.util.List;
 
 //class Car {
@@ -14,10 +11,6 @@ import java.util.List;
 //        }
 //    }
 //}
-
-
-public class Application {
-    public static void main(String[] args) {
 //        System.out.println("경주할 자동차 이름을 입력하세요.(이름은 쉼표(,) 기준으로 구분)");
 //        String temp_name = Console.readLine();
 //
@@ -105,12 +98,27 @@ public class Application {
 //        return new String[0];
 //    }
 
-    InputCarName Names = new InputCarName();
-    InputTotalMoves Moves = new InputTotalMoves();
+public class Application {
+    public static void main(String[] args) {
 
-    List<Car> Cars = Names.getCars();
-    int MoveCount = Moves.getTotalMoves();
+
+        InputCarName Names = new InputCarName();
+        InputTotalMoves Moves = new InputTotalMoves();
+
+        List<Car> cars = Names.getCars();
+        int MoveCount = Moves.getTotalMoves();
+
+        InputCarName names = new InputCarName();
+        InputTotalMoves moves = new InputTotalMoves();
+
+        for (int i = 0; i < cars.size(); i++) {
+            Car car = cars.get(i);
+            car.getName();
+        }
+        for (int i = 0; i < cars.size(); i++) {
+            Car car = cars.get(i);
+            System.out.println(car.getMovement());
+        }
+
     }
-
-
 }

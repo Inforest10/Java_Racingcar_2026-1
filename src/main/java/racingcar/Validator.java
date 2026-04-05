@@ -1,4 +1,7 @@
-package racingcar;
+package racingcar; // 이 선언이 없으면 Car 클래스를 찾지 못합니다.
+
+import java.util.List; // List 타입을 사용하기 위해 필요합니다.
+import java.util.ArrayList;
 
 public class Validator {
 
