@@ -2,6 +2,8 @@ package racingcar;
 
 import camp.nextstep.edu.missionutils.Console;
 import camp.nextstep.edu.missionutils.Randoms;
+import java.util.ArrayList;
+import java.util.List;
 
 //class Car {
 //    String name;
@@ -103,5 +105,9 @@ public class Application {
 //        return new String[0];
 //    }
 
+    InputCarName Names = new InputCarName();
+    InputTotalMoves Moves = new InputTotalMoves();
+
+    List<Car> Cars = new ArrayList<>();
     }
 }
