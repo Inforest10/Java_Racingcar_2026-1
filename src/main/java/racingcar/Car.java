@@ -13,8 +13,8 @@ public class Car {
         movement++;
     }
 
-    public void getName() {
-        System.out.println(name);
+    public String getName() {
+        return this.name;
     }
 
     public int getMovement() {

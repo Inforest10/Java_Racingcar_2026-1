@@ -101,24 +101,14 @@ import java.util.List;
 public class Application {
     public static void main(String[] args) {
 
-
         InputCarName Names = new InputCarName();
         InputTotalMoves Moves = new InputTotalMoves();
 
         List<Car> cars = Names.getCars();
         int MoveCount = Moves.getTotalMoves();
+        System.out.println();
 
-        InputCarName names = new InputCarName();
-        InputTotalMoves moves = new InputTotalMoves();
-
-        for (int i = 0; i < cars.size(); i++) {
-            Car car = cars.get(i);
-            car.getName();
-        }
-        for (int i = 0; i < cars.size(); i++) {
-            Car car = cars.get(i);
-            System.out.println(car.getMovement());
-        }
-
+        Racing race = new Racing(cars, MoveCount);
+        race.StartRacing();
     }
 }
