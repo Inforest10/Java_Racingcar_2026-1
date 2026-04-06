@@ -110,5 +110,8 @@ public class Application {
 
         Racing race = new Racing(cars, MoveCount);
         race.StartRacing();
+
+        OutputWinner Winner = new OutputWinner(cars);
+        Winner.printWinner();
     }
 }
